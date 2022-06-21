@@ -17,8 +17,8 @@ data "aws_subnet_ids" "default" {
 }
 
 resource "aws_launch_configuration" "example" {
-  image_id                    = "ami-0c55b159cbfafe1f0"
-  instance_type          = "t2.micro"
+  image_id        = "ami-0c55b159cbfafe1f0"
+  instance_type   = "t2.micro"
   security_groups = [aws_security_group.instance.id]
 
   user_data = <<-EOF
