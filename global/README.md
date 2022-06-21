@@ -1,0 +1,1 @@
+S3, IAM, and other global related resources
